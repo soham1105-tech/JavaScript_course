@@ -9,7 +9,7 @@ var name = "Soham";
 var age = 20;
 var isLoggedIn = true;
 var vary = null;
-console.log([ age, isLoggedIn, vary, ]);
+console.log([ age, isLoggedIn, vary, name]);
 
 //object
 console.log(typeof vary); //object (null is a special case in JS, it is an object type but represents an empty value)
