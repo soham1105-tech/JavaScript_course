@@ -1,6 +1,20 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	"features": {
-		"ghcr.io/devcontainers-extra/features/node-asdf:0": {}
-	}
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/node-asdf:0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "vscode-icons-team.vscode-icons",
+        "wayou.vscode-todo-highlight"
+      ],
+      "settings": {
+        "editor.fontSize": 20,
+        "terminal.integrated.fontSize": 15,
+        "editor.wordWrap": "on"
+      }
+    }
+  }
 }
