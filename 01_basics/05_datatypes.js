@@ -9,8 +9,24 @@
 const id = Symbol('1234')
 const anotherId = Symbol('1234')
 console.log(id === anotherId)
+console.table([id , anotherId])
 
 const bigNumber = 78342154184226145n //n converts int to bigInt
+
+let myObj = {   //declaring object
+    name: "SohamRay",
+    age: "20",
+}
+console.log(myObj.name);
+
+const myFunction = function() {
+    console.log("Hello World!");
+}
+
+console.log(typeof bigNumber) //bigint
+console.log(typeof myFunction);
+console.log(typeof id)
+
 
 
 //   2) NON-PRIMITIVE DATATYPE (reference)
