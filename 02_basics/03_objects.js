@@ -9,7 +9,7 @@ const JsUser = {
     name: "Soham",
     "Full Name": "Soham Ray",
     age: 19,
-    [mySym]: "mykey1",
+    [mySym]: "mykey1", //always put symbol in[]
     email: "raysoham11@gmail.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"],
@@ -21,8 +21,23 @@ console.log(JsUser["Full Name"]); //only way of accessing full name
 //console.log(typeof JsUser.mySym); //typeof predicts it as a string
 //so we need to insert mysym in [] so...
 
-console.log(typeof JsUser[mySym])
+console.log(JsUser[mySym])
 
 //to change any value in object
-JsUser.email = ""
+JsUser.email = "raysoham2005@gmail.com" //to replace an element in object
+//Object.freeze(JsUser) //to lock replacing element in object
+//JsUser.email = "raysoham2005@microsoft.com"
+
+console.log(JsUser);
+
+JsUser.geetings = function() { //declare a function inside object
+    console.log("Hello, JsUser");
+}
+
+console.log(JsUser.greetings()); //perfect way to recall function
+
+JsUser.greetingsTwo = function() {
+    console.log(`Hello JS User, ${this.name}`); //
+}
+console.log(JsUser.greetingsTwo());
 
