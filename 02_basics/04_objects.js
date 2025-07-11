@@ -35,4 +35,19 @@ console.log(Object.entries(tinderUser)); //[keys:values]
 
 console.log(tinderUser.hasOwnProperty('name')); //checks if property is present or not
 
+//destructuring an object
 
+const course = {
+    courseName : "JavaScript",
+    price : "Free",
+    courseInstructor : "Soham",
+}
+
+const {courseInstructor : instructor} = course;
+console.log(instructor);
+
+[
+    {},
+    {},
+    {}
+]
