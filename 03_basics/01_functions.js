@@ -33,3 +33,30 @@ function loginUserMsg(username) {
 
 console.log(loginUserMsg("")); //if not username is passed it assumes it as undefined
 
+function calculateCartPrice(...num1) { //...rest/spread operator converts multiple arguments to arrays
+    return num1;
+}
+console.log(calculateCartPrice(200, 500, 600, 2000));
+
+const user = {
+    username: "Soham",
+    price: 199
+}
+
+function handleUserObject(anyobject) {
+    console.log(`Username is ${anyobject.username} and the price is ${anyobject.price}`);
+}
+handleUserObject(user);
+//can also be called in this step
+handleUserObject({
+    username: "Bruce Wayne",
+    price: "100,000,000,000$"
+})
+
+const myNewArray = [200,400,600];
+function return2ndvalue(getnewarray) {
+    return getnewarray[1];
+}
+console.log(return2ndvalue(myNewArray));
+console.log(return2ndvalue([200,800,900]));
+
