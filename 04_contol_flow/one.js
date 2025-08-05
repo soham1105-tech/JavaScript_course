@@ -20,10 +20,26 @@ const courseJS = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if(userLoggedIn && debitCard && courseJS)
+if(userLoggedIn && debitCard && courseJS) //logical operators
     console.log("Allow to buy JavaScript Course.");
 
 if(loggedInFromGoogle || loggedInFromEmail)
     console.log("User logged in.");
-    
+
+//Nullish Coalescing Operator ?? : null undefined
+
+let val1, val2, val3;
+val1 = 5 ?? 10
+val2 = null ?? 20
+val3 = undefined ?? 30
+console.log(val1)
+console.log(val2)
+console.log(val3)
+
+//condition ? true : false 
+
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
+
+
     
